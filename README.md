@@ -33,7 +33,7 @@ The aim is to improve problem-solving skills, get comfortable with algorithms an
 | 1   | [Two Sum](https://leetcode.com/problems/two-sum/) | Easy | [Solution](./Day1/two_sum.cpp) |
 | 2   | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Medium | [Solution](./Day2/reverse_integer.cpp) |
 | 3   | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium | [Solution](./Day3/longest_substring.cpp) |
-| 4   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Solution](./Day4/valid_parentheses.cpp) |
+| 4   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Easy | [Solution](validparanthesis.cpp) |
 | ... | ... | ... | ... |
 | 100 | Final day challenge! | TBD | TBD |
 
