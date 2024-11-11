@@ -19,7 +19,7 @@ public:
             }
             l=r;
         }
-        return ans;
+        return ans+0;
     }
 };
 
