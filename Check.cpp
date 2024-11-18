@@ -1,4 +1,5 @@
 unordered_map<int,int> um;
+//ok
         for(int i=0;i<k;i++)
         {
             if(um.find(arr[i]) != um.end())
