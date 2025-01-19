@@ -1,23 +1,27 @@
-if(k==0 ||!head ||!head->next)
-            return head;
-        Node* tail=head;
-        int c=1;
-        while(tail->next!=NULL)
-        {
-            tail=tail->next;
-            c++;//count of nodes
-        }
-        k=k%c; //if k>=c
-        if(k==0)    return head;
-        
-        tail->next=head; //make it a circular LL
+class Solution{
+            public:
+            Node* findNthNode(Node* temp,int k){
+                        int cnt = 1;
+                        while(temp!=NULL){
+                                    if(cnt == k) return temp;
+                                    cnt++;
+                                    temp = temp->next;
+                        }
+                        return temp;
+            }
 
-        Node* temp=head;
-        for(int i=1;i<k;i++)
-        {
-            temp=temp->next;
-        }
-        Node* newHead=temp->next;
-        temp->next=NULL;
-        
-        return newHead;
+            Node *rotate(Node* head,int k){
+                        if(head == NULL || k==0) return head;
+                        Node* tail = head;
+                        int len = 1;
+                        while(tail->next!=NULL){
+                                    len++;
+                                    tail = tail->next;
+                        }
+                        if(k%len==0) return head;
+                        k = k%len;
+                        tail->next = head;// no longer tail
+                        newLastNode = findNthNode(head,len-k);// new tail
+                        newLastNode->next = NULL;
+            }
+};
